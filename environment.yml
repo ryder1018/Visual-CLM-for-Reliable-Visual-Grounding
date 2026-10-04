@@ -1,0 +1,9 @@
+name: visual-clm
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12
+  - pillow=12.1.0
+  - ijson=3.4.0
+  - yajl=2.1.0

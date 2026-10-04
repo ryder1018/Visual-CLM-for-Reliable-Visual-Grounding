@@ -1,0 +1,297 @@
+{
+  "dataset": "gRefCOCO_C1_final",
+  "created_at": "2026-10-04T08:48:26.261368+00:00",
+  "source_split": "train",
+  "count_per_label": 20,
+  "human_review": "approved",
+  "samples_sha256": "7047f7745d419a1fabdc39a4019580d21f00a7e2389b7351b28b87227b6c4de2",
+  "review_sha256": "b3b42f72fdbc27b5f2b6781ee4fee4a8b1aa2c8ca2458a785df933c331e6cb81",
+  "sample_ids": [
+    "grefcoco_train_ref38548_sent106245",
+    "grefcoco_train_ref38550_sent106251",
+    "grefcoco_train_ref52720_sent145195",
+    "grefcoco_train_ref52723_sent145203",
+    "grefcoco_train_ref29445_sent81037",
+    "grefcoco_train_ref29450_sent81052",
+    "grefcoco_train_ref24540_sent67462",
+    "grefcoco_train_ref24542_sent67466",
+    "grefcoco_train_ref51204_sent141054",
+    "grefcoco_train_ref51207_sent141065",
+    "grefcoco_train_ref34679_sent95517",
+    "grefcoco_train_ref34681_sent95523",
+    "grefcoco_train_ref43436_sent119573",
+    "grefcoco_train_ref43438_sent119579",
+    "grefcoco_train_ref3846_sent10659",
+    "grefcoco_train_ref3849_sent10672",
+    "grefcoco_train_ref58390_sent160714",
+    "grefcoco_train_ref58394_sent160724",
+    "grefcoco_train_ref85440_sent235167",
+    "grefcoco_train_ref85444_sent235175",
+    "grefcoco_train_ref29469_sent81098",
+    "grefcoco_train_ref29471_sent81104",
+    "grefcoco_train_ref78637_sent216486",
+    "grefcoco_train_ref78639_sent216492",
+    "grefcoco_train_ref55724_sent153372",
+    "grefcoco_train_ref55727_sent153384",
+    "grefcoco_train_ref5135_sent14230",
+    "grefcoco_train_ref5138_sent14242",
+    "grefcoco_train_ref70334_sent193887",
+    "grefcoco_train_ref70338_sent193899",
+    "grefcoco_train_ref687_sent1906",
+    "grefcoco_train_ref690_sent1915",
+    "grefcoco_train_ref64320_sent177239",
+    "grefcoco_train_ref64323_sent177252",
+    "grefcoco_train_ref80030_sent220369",
+    "grefcoco_train_ref80032_sent220375",
+    "grefcoco_train_ref888_sent2471",
+    "grefcoco_train_ref890_sent2475",
+    "grefcoco_train_ref28_sent92",
+    "grefcoco_train_ref31_sent110"
+  ],
+  "images": [
+    {
+      "image_id": 241785,
+      "path": "images/COCO_train2014_000000241785.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000241785.jpg",
+      "sha256": "3be44b3e11d61a4c40f9fb8b9a22309feeb4326c9caedd14d683423df44591cb",
+      "width": 500,
+      "height": 375
+    },
+    {
+      "image_id": 328124,
+      "path": "images/COCO_train2014_000000328124.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000328124.jpg",
+      "sha256": "66f09caaa39ef2187215e4e0c6f7658dcaca7b72049b8a72b163ad9ace707602",
+      "width": 424,
+      "height": 640
+    },
+    {
+      "image_id": 183982,
+      "path": "images/COCO_train2014_000000183982.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000183982.jpg",
+      "sha256": "0cc5c2271654869d91be9eb13cb1a9c610b82f39b59817acd3d00dd52607a507",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "image_id": 151655,
+      "path": "images/COCO_train2014_000000151655.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000151655.jpg",
+      "sha256": "35fed54afd290b019f12162824ecdf56bc87c844e023073673b63b2fdaf81c7a",
+      "width": 640,
+      "height": 426
+    },
+    {
+      "image_id": 320234,
+      "path": "images/COCO_train2014_000000320234.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000320234.jpg",
+      "sha256": "07022b96588cb471359c234a6eb0f877145fa38e327323053be50d262ce1986f",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "image_id": 217299,
+      "path": "images/COCO_train2014_000000217299.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000217299.jpg",
+      "sha256": "ffc66050d5e0b31fef31ab19ff9ca72a1851ac18867af1cbf1dd9b4a29e469c7",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "image_id": 272058,
+      "path": "images/COCO_train2014_000000272058.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000272058.jpg",
+      "sha256": "7337a25f850a5729bf2601e3fc9763e788a870a775b87a5fdc02f027383ddc3b",
+      "width": 375,
+      "height": 500
+    },
+    {
+      "image_id": 24129,
+      "path": "images/COCO_train2014_000000024129.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000024129.jpg",
+      "sha256": "4b3a8b281c10e0885e528cfa987da3e3d8f1725ef2561440dcd018679f16eee3",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "image_id": 361406,
+      "path": "images/COCO_train2014_000000361406.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000361406.jpg",
+      "sha256": "c459d27294de9ac9aa5f4318e28c3d26402079b83134da613c47c7e845bfb21b",
+      "width": 612,
+      "height": 612
+    },
+    {
+      "image_id": 529511,
+      "path": "images/COCO_train2014_000000529511.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000529511.jpg",
+      "sha256": "bbe65a62eed9516d54fe5e5a406638e74ba9c51ff55572420179e73a8ded391f",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "image_id": 184138,
+      "path": "images/COCO_train2014_000000184138.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000184138.jpg",
+      "sha256": "2fed44c622515f9b3018edb61c3c94ea99f6c0a2a6f1022ae5cc6e3f342362ee",
+      "width": 500,
+      "height": 499
+    },
+    {
+      "image_id": 488203,
+      "path": "images/COCO_train2014_000000488203.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000488203.jpg",
+      "sha256": "f807dc4409cc056d626a4e1e6143eb95659cf4c170b71428f07ea15034101980",
+      "width": 426,
+      "height": 640
+    },
+    {
+      "image_id": 345104,
+      "path": "images/COCO_train2014_000000345104.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000345104.jpg",
+      "sha256": "374bcfa58b77d306fe171cc69d8e2dbc021987b258a8c5a01768c3883914d81d",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "image_id": 31904,
+      "path": "images/COCO_train2014_000000031904.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000031904.jpg",
+      "sha256": "0ed98f5b10a80ca155aef7409e1b37b6fcb4d4fae776fbbe69bb43f2c9abe431",
+      "width": 500,
+      "height": 441
+    },
+    {
+      "image_id": 437336,
+      "path": "images/COCO_train2014_000000437336.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000437336.jpg",
+      "sha256": "d6ea3444f5ab57cb0d12f5c9844650c5e52a7a08bb678d46c7d9200a51b856a0",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "image_id": 4843,
+      "path": "images/COCO_train2014_000000004843.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000004843.jpg",
+      "sha256": "b17dfa1f802dcd8242fb1f880e8d021491006ef64bd8771a7df397ad67e21bab",
+      "width": 480,
+      "height": 640
+    },
+    {
+      "image_id": 399687,
+      "path": "images/COCO_train2014_000000399687.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000399687.jpg",
+      "sha256": "0aaf1b32998bf30232db1e60dee26ccd1b0b2c233c8b2df1e6ca5364d904b9d1",
+      "width": 640,
+      "height": 512
+    },
+    {
+      "image_id": 496439,
+      "path": "images/COCO_train2014_000000496439.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000496439.jpg",
+      "sha256": "1ab1e38a2c3f990dcfa26f0d442af3f81a36260d5d7110d3be275e3b7bc94840",
+      "width": 640,
+      "height": 427
+    },
+    {
+      "image_id": 6004,
+      "path": "images/COCO_train2014_000000006004.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000006004.jpg",
+      "sha256": "4a5c535f028a985ea382a21f182a1a7d85418c6b761ed4c4c2ed2e93694295cd",
+      "width": 640,
+      "height": 480
+    },
+    {
+      "image_id": 165,
+      "path": "images/COCO_train2014_000000000165.jpg",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/train2014/COCO_train2014_000000000165.jpg",
+      "sha256": "50f1895bb22c6dda602ab7c7768fa659b5f01d2238330aa28a431aa9f11b0b44",
+      "width": 640,
+      "height": 536
+    }
+  ],
+  "sources": [
+    {
+      "path": "data/raw/grefcoco/grefs(unc).json",
+      "url": "https://huggingface.co/datasets/FudanCVL/gRefCOCO/resolve/81eede59b3ac070049f597d023c0ff08d1fb80e9/grefs%28unc%29.json",
+      "sha256": "cc37c5ff95373c78a6a3f98b4c7bc67fde387ea8514752a1392db64223eb3366"
+    },
+    {
+      "path": "data/raw/grefcoco/instances.json",
+      "url": "https://huggingface.co/datasets/FudanCVL/gRefCOCO/resolve/81eede59b3ac070049f597d023c0ff08d1fb80e9/instances.json",
+      "sha256": "7f86adb7f4c39db19c7f02a3cc604d17f8016e4c4e8312652d0acc4eae3a2cbd"
+    },
+    {
+      "path": "data/raw/coco/annotations/instances_train2014.json",
+      "url": "https://s3.amazonaws.com/images.cocodataset.org/annotations/annotations_trainval2014.zip",
+      "sha256": "777ef504abfeba349930485bb32ecd5b6529129a3e010f7852e1437cb049b732"
+    }
+  ],
+  "composition": [
+    {
+      "samples_path": "data/debug/samples.jsonl",
+      "samples_sha256": "a4f2d1c87103f98ac5db8f614c1cd99bcf5cb30a081e4eb9cb0ec6b9049e78b3",
+      "review_path": "data/debug/review.json",
+      "review_sha256": "c696f5786303f9beeaeb1c3162326c0c4c67c5501317edbc0cb79da8c5648ff8",
+      "reviewer": "Ryder Wu",
+      "reviewed_at": "2026-10-04T08:31:15.536Z",
+      "included_sample_ids": [
+        "grefcoco_train_ref38548_sent106245",
+        "grefcoco_train_ref38550_sent106251",
+        "grefcoco_train_ref52720_sent145195",
+        "grefcoco_train_ref52723_sent145203",
+        "grefcoco_train_ref29445_sent81037",
+        "grefcoco_train_ref29450_sent81052",
+        "grefcoco_train_ref24540_sent67462",
+        "grefcoco_train_ref24542_sent67466",
+        "grefcoco_train_ref51204_sent141054",
+        "grefcoco_train_ref51207_sent141065",
+        "grefcoco_train_ref34679_sent95517",
+        "grefcoco_train_ref34681_sent95523",
+        "grefcoco_train_ref43436_sent119573",
+        "grefcoco_train_ref43438_sent119579",
+        "grefcoco_train_ref3846_sent10659",
+        "grefcoco_train_ref3849_sent10672",
+        "grefcoco_train_ref58390_sent160714",
+        "grefcoco_train_ref58394_sent160724",
+        "grefcoco_train_ref85440_sent235167",
+        "grefcoco_train_ref85444_sent235175",
+        "grefcoco_train_ref29469_sent81098",
+        "grefcoco_train_ref29471_sent81104",
+        "grefcoco_train_ref78637_sent216486",
+        "grefcoco_train_ref78639_sent216492",
+        "grefcoco_train_ref55724_sent153372",
+        "grefcoco_train_ref55727_sent153384",
+        "grefcoco_train_ref5135_sent14230",
+        "grefcoco_train_ref5138_sent14242",
+        "grefcoco_train_ref70334_sent193887",
+        "grefcoco_train_ref70338_sent193899",
+        "grefcoco_train_ref687_sent1906",
+        "grefcoco_train_ref690_sent1915",
+        "grefcoco_train_ref64320_sent177239",
+        "grefcoco_train_ref64323_sent177252",
+        "grefcoco_train_ref80030_sent220369",
+        "grefcoco_train_ref80032_sent220375"
+      ]
+    },
+    {
+      "samples_path": "data/debug/replacements/samples.jsonl",
+      "samples_sha256": "380bb3902595d513ec9e2a2bf746e57b2c36ad7936a259f73512e52c4c620a1d",
+      "review_path": "data/debug/replacements/review.json",
+      "review_sha256": "ebaae56adda2ea064867a28d93e726e6e109a7847b80c289f1c853c395fed266",
+      "reviewer": "Ryder Wu",
+      "reviewed_at": "2026-10-04T08:46:02.022Z",
+      "included_sample_ids": [
+        "grefcoco_train_ref888_sent2471",
+        "grefcoco_train_ref890_sent2475",
+        "grefcoco_train_ref28_sent92",
+        "grefcoco_train_ref31_sent110"
+      ]
+    }
+  ],
+  "composition_order": "36 unchanged approved original rows, then 4 unchanged approved replacement rows",
+  "candidate_order": "annotation_id",
+  "bbox_conversion": "xywh_to_xyxy_no_clipping",
+  "cross_dataset_image_disjoint": "not_checked; debug only",
+  "imported_review_backup": "artifacts/c1_reviews/20261004T164822"
+}

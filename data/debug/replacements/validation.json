@@ -1,0 +1,19 @@
+{
+  "samples": 4,
+  "positives": 2,
+  "negatives": 2,
+  "images": 2,
+  "source_queries_and_targets": "verified",
+  "full_coco_candidate_sets": "verified",
+  "source_and_image_sha256": "verified",
+  "curation_sha256": "verified",
+  "human_review": {
+    "pending": 0,
+    "approved": 4,
+    "rejected": 0
+  },
+  "samples_sha256": "380bb3902595d513ec9e2a2bf746e57b2c36ad7936a259f73512e52c4c620a1d",
+  "reviewer": "Ryder Wu",
+  "reviewed_at": "2026-10-04T08:46:02.022Z",
+  "review_sha256": "ebaae56adda2ea064867a28d93e726e6e109a7847b80c289f1c853c395fed266"
+}

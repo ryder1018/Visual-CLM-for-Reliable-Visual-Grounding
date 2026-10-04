@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-04T17:36:07.392927+08:00",
+  "code_commit": "bb42c6c5bf914fd449bed2f6ca65be80602cb1f7",
+  "source_file_hashes": "verified",
+  "code_worktree": "clean",
+  "checkpoint_sha256": "b2b4a8c9c2d39263eff78a351eb909a342ce9b3bf21a3f07c1d1bf15f1c4eda5",
+  "official_lfs_hash_and_size": "matched",
+  "checkpoint_cfg_shapes_scale": "verified",
+  "encoder_config_hidden_size": "verified",
+  "inspected_file_hashes": 22,
+  "disallowed_pickle_global": "rejected",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "log": "artifacts/c0/unit_tests.log"
+  },
+  "model_execution": "not performed; source/static checkpoint verification only",
+  "manifest_sha256": "2d3f86ae9b43c3f99a8cc85dd739387024269ecb8a57404105f270bea06a5c73"
+}

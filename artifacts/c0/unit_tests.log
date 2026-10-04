@@ -1,0 +1,18 @@
+test_gt_candidates_require_exact_target_but_proposals_allow_overlap (test_data.SamplesTest.test_gt_candidates_require_exact_target_but_proposals_allow_overlap) ... ok
+test_loads_positive_and_negative_without_reordering (test_data.SamplesTest.test_loads_positive_and_negative_without_reordering) ... ok
+test_preserves_groundable_proposal_miss_and_empty_candidates (test_data.SamplesTest.test_preserves_groundable_proposal_miss_and_empty_candidates) ... ok
+test_rejects_inconsistent_labels_and_candidates (test_data.SamplesTest.test_rejects_inconsistent_labels_and_candidates) ... ok
+test_rejects_invalid_boxes_with_sample_context (test_data.SamplesTest.test_rejects_invalid_boxes_with_sample_context) ... ok
+test_rejects_missing_image_field_and_duplicate_sample (test_data.SamplesTest.test_rejects_missing_image_field_and_duplicate_sample) ... ok
+test_converts_boxes_and_keeps_distractors_in_annotation_order (test_prepare_c1.PrepareTest.test_converts_boxes_and_keeps_distractors_in_annotation_order) ... ok
+test_curation_preserves_raw_sentence_id_and_excludes_noisy_images (test_prepare_c1.PrepareTest.test_curation_preserves_raw_sentence_id_and_excludes_noisy_images) ... ok
+test_excludes_multi_target_and_non_train_references (test_prepare_c1.PrepareTest.test_excludes_multi_target_and_non_train_references) ... ok
+test_approval_requires_reviewer_timestamp_and_matching_dataset (test_review_c1.ReviewTest.test_approval_requires_reviewer_timestamp_and_matching_dataset) ... ok
+test_approved_review_rejects_non_string_reviewer (test_review_c1.ReviewTest.test_approved_review_rejects_non_string_reviewer) ... ok
+test_pending_is_reported_without_claiming_approval (test_review_c1.ReviewTest.test_pending_is_reported_without_claiming_approval) ... ok
+test_rejects_missing_duplicate_and_unknown_review_entries (test_review_c1.ReviewTest.test_rejects_missing_duplicate_and_unknown_review_entries) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.120s
+
+OK

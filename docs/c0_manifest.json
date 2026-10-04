@@ -1,0 +1,294 @@
+{
+  "audit_date": "2026-10-04",
+  "timezone": "Asia/Taipei",
+  "scope": "C0 source and checkpoint static verification",
+  "code": {
+    "repo": "https://github.com/Contrastive-LM/CLM",
+    "commit": "bb42c6c5bf914fd449bed2f6ca65be80602cb1f7",
+    "local_path": "external/CLM",
+    "branch_observed": "main"
+  },
+  "checkpoint": {
+    "repo": "Contrastive-LM/CLM-v0.1-8B",
+    "revision": "e939398d4556fcd9400c76fa8c5a513202f42b0a",
+    "file": "CLM_v0.1-8B.pt",
+    "path": "artifacts/c0/model/CLM_v0.1-8B.pt",
+    "sha256": "b2b4a8c9c2d39263eff78a351eb909a342ce9b3bf21a3f07c1d1bf15f1c4eda5",
+    "size_bytes": 75557149,
+    "verification": "local SHA256 matches official pinned LFS metadata",
+    "cfg": {
+      "model": "Qwen/Qwen3-8B",
+      "hidden_size": 4096,
+      "projection_dim": 512,
+      "width": 1536,
+      "depth": 3,
+      "activation": "gelu",
+      "layernorm": true,
+      "residual": false
+    },
+    "total_head_parameters": 18887680,
+    "logit_scale": 4.613248825073242,
+    "exp_logit_scale": 100.81113593422504,
+    "inference_scale": 100.0,
+    "shapes": {
+      "state_head": {
+        "inp.weight": [
+          1536,
+          4096
+        ],
+        "inp.bias": [
+          1536
+        ],
+        "hidden.0.weight": [
+          1536,
+          1536
+        ],
+        "hidden.0.bias": [
+          1536
+        ],
+        "norms.0.weight": [
+          1536
+        ],
+        "norms.0.bias": [
+          1536
+        ],
+        "out.weight": [
+          512,
+          1536
+        ],
+        "out.bias": [
+          512
+        ]
+      },
+      "action_head": {
+        "inp.weight": [
+          1536,
+          4096
+        ],
+        "inp.bias": [
+          1536
+        ],
+        "hidden.0.weight": [
+          1536,
+          1536
+        ],
+        "hidden.0.bias": [
+          1536
+        ],
+        "norms.0.weight": [
+          1536
+        ],
+        "norms.0.bias": [
+          1536
+        ],
+        "out.weight": [
+          512,
+          1536
+        ],
+        "out.bias": [
+          512
+        ]
+      }
+    }
+  },
+  "encoder": {
+    "repo": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "revision_semantics": "project audit pin; original CLM training encoder commit not disclosed in inspected sources",
+    "hidden_size": 4096,
+    "pooling": "last-token (official CLM model card/config contract; runtime not executed)",
+    "weights_downloaded": false,
+    "weights_verification": "official API LFS hashes recorded only; not locally verified",
+    "weight_files": [
+      {
+        "rfilename": "model-00001-of-00005.safetensors",
+        "blobId": "8d46cf470aff053c27fd6d956d4d69af9460bd2a",
+        "size": 3996250744,
+        "lfs": {
+          "sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f",
+          "size": 3996250744,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "model-00002-of-00005.safetensors",
+        "blobId": "e726a2bcb3b100cba7ae899689cc029d8a08b20c",
+        "size": 3993160032,
+        "lfs": {
+          "sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282",
+          "size": 3993160032,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "model-00003-of-00005.safetensors",
+        "blobId": "c94db38adbcb837246c797986365b8e4603ef3ac",
+        "size": 3959604768,
+        "lfs": {
+          "sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836",
+          "size": 3959604768,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "model-00004-of-00005.safetensors",
+        "blobId": "a6c92dd09e29e1f72271e087f89ee033b321101c",
+        "size": 3187841392,
+        "lfs": {
+          "sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a",
+          "size": 3187841392,
+          "pointerSize": 135
+        }
+      },
+      {
+        "rfilename": "model-00005-of-00005.safetensors",
+        "blobId": "7bbb0cbc623d70925a3a82b301a99cb52ac9ed5b",
+        "size": 1244659840,
+        "lfs": {
+          "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff",
+          "size": 1244659840,
+          "pointerSize": 135
+        }
+      }
+    ],
+    "normalisation": "encoder vectors: x/(L2_norm(x)+1e-12); each projected vector: torch F.normalize(dim=-1)"
+  },
+  "recipe": {
+    "inference": "raw string embedding endpoint; truncate_prompt_tokens=2048 by default",
+    "training_clm": "text without special tokens; string states keep tail, action text keeps head; cap=max_len-1; chat state uses apply_chat_template(add_generation_prompt=False)",
+    "training_choice": "state and candidate text rendered via schema; both tokenized with keep=tail",
+    "max_len_clm_default": 8192,
+    "max_len_choice_default": 2048,
+    "last_pooler_explicitly_configured_in_launcher": false,
+    "ranking": "state/context and instructions rendered as text then strip surrounding whitespace; join with blank line when both nonempty; nonempty candidate verbatim (candidate whitespace preserved); empty string candidate falls back to numeric option key; normalized projections; logits=min(exp(logit_scale),100)*dot(S,A); API temperature defaults to 1; softmax; descending probability"
+  },
+  "verified": [
+    "pinned source revisions",
+    "downloaded checkpoint SHA256/size",
+    "checkpoint cfg and float32 tensor shapes",
+    "actual scale value and official clamp",
+    "source-defined recipe and ranking"
+  ],
+  "not_reproduced": [
+    "Qwen encoder inference",
+    "vLLM last-token runtime pooling/tokenization check",
+    "torch official head loader and forward",
+    "official-versus-local ranking numerical agreement",
+    "GPU resource probe",
+    "training or benchmark"
+  ],
+  "sources": [
+    {
+      "path": "external/CLM/README.md",
+      "sha256": "e0f9a2a5016a314f6f963ca1d759f044895f5ca4bb134cc4e8e3e3f2a1a1483e",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/README.md"
+    },
+    {
+      "path": "external/CLM/docs/FINETUNING.md",
+      "sha256": "d2709d82a14bd2e3801cad5b37f65f5288cc731ae3f689f3e3fee50b82cedc32",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/docs/FINETUNING.md"
+    },
+    {
+      "path": "external/CLM/src/clm/heads.py",
+      "sha256": "3f3b880e940a47b45879614b140fd873f7de9b13ccb8254b07989af7ea92e093",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/src/clm/heads.py"
+    },
+    {
+      "path": "external/CLM/src/clm/embedder.py",
+      "sha256": "d0ca78073aa1c59676e17e35d9c8cda8131da03010841887f833fbfe8fc69dbc",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/src/clm/embedder.py"
+    },
+    {
+      "path": "external/CLM/src/clm/engine.py",
+      "sha256": "838897b99b1b09ce141f35272450e1c59fd290f092d1362570e07a453f06f5e7",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/src/clm/engine.py"
+    },
+    {
+      "path": "external/CLM/src/clm/schema.py",
+      "sha256": "52cec58afbf49ad7b7aa6bdb7e7476ee42bf3fd7a2703d44319dc4b565987335",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/src/clm/schema.py"
+    },
+    {
+      "path": "external/CLM/serve_qwen3_8b.sh",
+      "sha256": "1caedbe3c025a028714c0229a994a07396407f7400d3099aaa9528bb79409451",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/serve_qwen3_8b.sh"
+    },
+    {
+      "path": "external/CLM/train/embed_utils.py",
+      "sha256": "e20962d041f66081c23d45195bbc6944f94b511a87e452e100e78d5c77705842",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/train/embed_utils.py"
+    },
+    {
+      "path": "external/CLM/train/finetune.py",
+      "sha256": "4917046b1b38f4ce3602b039b85dc7f238263b87f040793f6b12446a271bb9d6",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/train/finetune.py"
+    },
+    {
+      "path": "external/CLM/evaluation/bon_eval.py",
+      "sha256": "8f7ca75ad07691de81542ca06ed8ce40f277eeddce0c2147802a000fbc18e4ad",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/evaluation/bon_eval.py"
+    },
+    {
+      "path": "external/CLM/requirements.txt",
+      "sha256": "663f091214e75b9b0a46278166591342421161b3c33bac34379364f7a13cdd22",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/requirements.txt"
+    },
+    {
+      "path": "external/CLM/pyproject.toml",
+      "sha256": "9b0e1f60421662b6281a6ee7ba2573d1459403537efad2efd7aa60d475ea5526",
+      "url": "https://github.com/Contrastive-LM/CLM/blob/bb42c6c5bf914fd449bed2f6ca65be80602cb1f7/pyproject.toml"
+    },
+    {
+      "path": "artifacts/c0/model/README.md",
+      "sha256": "4e738e65332f1cd55fb2767c37e634f1f650388cf42c2675b38291a1bedfb660",
+      "size_bytes": 5144,
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B/resolve/e939398d4556fcd9400c76fa8c5a513202f42b0a/README.md"
+    },
+    {
+      "path": "artifacts/c0/model/config.json",
+      "sha256": "d0ffb4df6eded7faab6e0df4ec3187e605ee3089adcbc36af6f41a1a24f4abe1",
+      "size_bytes": 307,
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B/resolve/e939398d4556fcd9400c76fa8c5a513202f42b0a/config.json"
+    },
+    {
+      "path": "artifacts/c0/model/CLM_v0.1-8B.pt",
+      "sha256": "b2b4a8c9c2d39263eff78a351eb909a342ce9b3bf21a3f07c1d1bf15f1c4eda5",
+      "size_bytes": 75557149,
+      "url": "https://huggingface.co/Contrastive-LM/CLM-v0.1-8B/resolve/e939398d4556fcd9400c76fa8c5a513202f42b0a/CLM_v0.1-8B.pt"
+    },
+    {
+      "path": "artifacts/c0/encoder/config.json",
+      "sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "size_bytes": 728,
+      "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/config.json"
+    },
+    {
+      "path": "artifacts/c0/encoder/tokenizer_config.json",
+      "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "size_bytes": 9732,
+      "url": "https://huggingface.co/Qwen/Qwen3-8B/resolve/b968826d9c46dd6066d109eabc6255188de91218/tokenizer_config.json"
+    }
+  ],
+  "api_snapshots": [
+    {
+      "path": "artifacts/c0/api/github_repo.json",
+      "sha256": "5d23b14f32d1e418b9b377927409265fd21d2d4256f1a26b093845ea0070f89c"
+    },
+    {
+      "path": "artifacts/c0/api/github_head.json",
+      "sha256": "dfcb036aef52c4dab57eea379b215b441f345afdc57a7f076aa0eba8639aa1c2"
+    },
+    {
+      "path": "artifacts/c0/api/clm_model.json",
+      "sha256": "a76195ab07e390eba2820eba4a13a4e5daecc5d38020f8e48e7f7ba558c76235"
+    },
+    {
+      "path": "artifacts/c0/api/encoder_model.json",
+      "sha256": "d61fa8fd3a17d3ad9eff5d8cb51cd63d74f63ef211b3018fbfcd8d88bd9d4572"
+    }
+  ],
+  "inspection_script": {
+    "path": "artifacts/c0/inspect_checkpoint.py",
+    "sha256": "07e549e8696c388d419ce60cff3d435ae18215d8f2573f383af7d65f1d2419d6"
+  }
+}

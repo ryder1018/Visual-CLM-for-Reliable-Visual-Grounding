@@ -1,0 +1,27 @@
+{
+  "samples_sha256": "380bb3902595d513ec9e2a2bf746e57b2c36ad7936a259f73512e52c4c620a1d",
+  "reviewer": "Ryder Wu",
+  "reviewed_at": "2026-10-04T08:46:02.022Z",
+  "samples": [
+    {
+      "sample_id": "grefcoco_train_ref888_sent2471",
+      "status": "approved",
+      "notes": ""
+    },
+    {
+      "sample_id": "grefcoco_train_ref890_sent2475",
+      "status": "approved",
+      "notes": ""
+    },
+    {
+      "sample_id": "grefcoco_train_ref28_sent92",
+      "status": "approved",
+      "notes": ""
+    },
+    {
+      "sample_id": "grefcoco_train_ref31_sent110",
+      "status": "approved",
+      "notes": ""
+    }
+  ]
+}

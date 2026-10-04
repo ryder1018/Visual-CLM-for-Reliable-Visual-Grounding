@@ -1,0 +1,14 @@
+{
+  "excluded_image_ids": [390378],
+  "sentence_overrides": {
+    "32545": 89566,
+    "29445": 81037,
+    "29450": 81052
+  },
+  "notes": {
+    "390378": "The only no-target sentence is unintelligible; exclude this image for C1 debugging.",
+    "32545": "Use the original alternative sentence instead of 'top tpples'.",
+    "29445": "Use the original descriptive sentence instead of 'right'.",
+    "29450": "Use the original 'teddy bear' sentence instead of the convoluted alternative. Still pending visual human review."
+  }
+}

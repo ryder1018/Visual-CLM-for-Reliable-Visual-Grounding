@@ -1,0 +1,36 @@
+{
+  "samples": 40,
+  "positives": 20,
+  "negatives": 20,
+  "images": 20,
+  "source_queries_and_targets": "verified",
+  "full_coco_candidate_sets": "verified",
+  "source_and_image_sha256": "verified",
+  "curation_sha256": "verified",
+  "human_review": {
+    "pending": 0,
+    "approved": 36,
+    "rejected": 4
+  },
+  "candidate_counts": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    13
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "pillow": "12.1.0",
+    "ijson": "3.4.0.post0",
+    "backend": "yajl2"
+  },
+  "samples_sha256": "a4f2d1c87103f98ac5db8f614c1cd99bcf5cb30a081e4eb9cb0ec6b9049e78b3",
+  "reviewer": "Ryder Wu",
+  "reviewed_at": "2026-10-04T08:31:15.536Z",
+  "review_sha256": "c696f5786303f9beeaeb1c3162326c0c4c67c5501317edbc0cb79da8c5648ff8"
+}
