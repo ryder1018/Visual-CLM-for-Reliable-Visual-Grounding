@@ -2,6 +2,8 @@
 
 此目錄包含 20 張 COCO train2014 圖片、20 正例＋20 負例，40 筆全部經 Ryder Wu 人工審核通過。後續工作請使用本目錄的 `samples.jsonl`。來源為 gRefCOCO train，保留原始 raw query 與完整同圖 COCO 候選；只供 debug，正式 A6 設定仍為 RefCOCOg UMD。
 
+新電腦建立環境、下載圖片與產生審核頁的完整指令見 [新電腦接續 C2 指引](../../../docs/setup_c2.md)。
+
 資料由原審核通過的 36 筆，再接補審通過的 4 筆組成；每筆 JSONL 完整保留原值，圖片複製到 `images/`，路徑仍相對 JSONL 所在目錄。原始資料與退件原因在上一層，補審資料在 `../replacements/`，均保留。
 
 `review.json` 是兩份真實人工審核的彙整，並非新一次人工審核。每筆保留原審核者、時間、備註與來源路徑；頂層 `reviewed_at` 表示最後一份來源審核的時間。`review_sources` 與 `manifest.json` 的 `composition` 記錄原資料／審核檔的 SHA256 和納入 IDs；原始檔案不可覆寫，以保留驗證依據。

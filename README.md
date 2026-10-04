@@ -4,6 +4,10 @@ Ground-or-Abstain：以官方 CLM 權重延伸視覺定位。研究契約與逐�
 
 C0 官方來源與 checkpoint 靜態查核已完成，版本／hash／Dh／d／pooling／scale 見 [docs/decisions.md](docs/decisions.md) 與 [來源 manifest](docs/c0_manifest.json)；encoder 推論與官方 ranking 尚未重現。C1 資料準備與人工審核也已完成：20 正例＋20 負例，使用 COCO `train2014` 圖片＋gRefCOCO queries。後續請讀取 [data/debug/final/samples.jsonl](data/debug/final/samples.jsonl)，驗證指令與審核來源見 [最終資料說明](data/debug/final/README.md)。C2 依使用者要求維持未開始。
 
+## 新電腦接續 C2
+
+請依 [新電腦接續 C2 指引](docs/setup_c2.md) 建立 conda 環境、下載並核對 C1 最終的 20 張圖片，以及還原審核頁。指引沿用已完成的 C0／C1 紀錄；C2 實作仍待開始。
+
 ## conda 環境
 
 ```bash
